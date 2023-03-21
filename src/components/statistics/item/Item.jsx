@@ -3,7 +3,7 @@ import { StatItem, ItemLabel, ItemPercentage } from './Item.styled';
 
 export const Item = ({ label, percentage }) => {
   return (
-    <StatItem>
+    <StatItem value={percentage}>
       <ItemLabel>{label}</ItemLabel>
       <ItemPercentage>{percentage}%</ItemPercentage>
     </StatItem>

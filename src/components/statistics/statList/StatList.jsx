@@ -18,6 +18,6 @@ StatList.propTypes = {
       id: propTypes.string.isRequired,
       label: propTypes.string.isRequired,
       percentage: propTypes.number.isRequired,
-    })
-  ),
+    }).isRequired
+  ).isRequired,
 };

@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const StatItem = styled.li`
   display: block;
-  width: ${props => {
-    return props.children[1].props.children[0];
-  }}%;
+  width: ${({ value }) => value + '%'};
   margin: 0 auto;
   padding: 10px 0;
 

@@ -14,8 +14,8 @@ export const Item = styled.li`
 export const ItemStatus = styled.span`
   width: 20px;
   height: 20px;
-  background-color: ${props => {
-    return props.children ? 'green' : 'red';
+  background-color: ${({ isOnline }) => {
+    return isOnline ? 'green' : 'red';
   }};
   border-radius: 50%;
 `;
